@@ -399,10 +399,43 @@
   <div class="modal is-hidden" data-modal>
     <div class="modal-content">
       <button class="close-btn" data-modal-close>&times;</button>
+      <form class="modal-form" name="signup_form" autocomplete="off" novalidate>
+        <h3>Leave your information and we'll call you back</h3>
+        <div class="modal-style">
+        <label >
+          Name
+          <input type="text" name="name" />
+        </label>
+        </div>
+
+        <div class="modal-style">
+        <label>
+        Phone
+        <input type="number" name="lastName" />
+        </label>
+        </div>
+
+        <div class="modal-style">
+        <label >
+          Email
+          <input type="email" name="email" />
+        </label>
+        </div>
+        <div class="modal-comments">
+          <label >Comments</label>
+          <textarea placeholder="Enter the text"></textarea>
+        </div>
+        <div class="modal-checkbox">
+        <label >
+          <input type="checkbox" name="hobby" value="reading" />
+          Reading
+        </label>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
     </div>
     
-    <form action method="get" autocomplete="off" class="contact-form"></form>
-  </div>
+    
   
   <script src="./modal.js"></script>
 </body>

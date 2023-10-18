@@ -97,19 +97,28 @@ h1 {
   width: 528px;
   height: 581px;
   position:absolute;
-  transition-timing-function: ease-in-out;
-  transition-delay: 200ms;
-  transition-duration: 200ms;
-  opacity: 1;
-  transition: opacity 200ms;
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
   box-shadow: 0px 1px 3px 0px #0000001F;
+  
 }
-
-
-
-
+.modal-content {
+display: flex;
+flex-direction: column;
+}
+.modal-style input {
+  width: 448px;
+  height: 40px;
+   
+}
+.modal-style {
+  width: 448px;
+  height: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;}
+    
 .is-hidden {
   visibility: hidden;
   opacity: 0%;
