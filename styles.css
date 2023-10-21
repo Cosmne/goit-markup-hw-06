@@ -105,19 +105,29 @@ h1 {
 .modal-content {
 display: flex;
 flex-direction: column;
+padding: 41px;
 }
 .modal-style input {
   width: 448px;
-  height: 40px;
-   
+  height: 40px;  
+}
+.modal-label {
+  display:flex;
+  flex-direction: column;
+}
+.modal-form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 .modal-style {
-  width: 448px;
+  width: inherit;
   height: 58px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  position: relative;}
+  position: relative;
+}
     
 .is-hidden {
   visibility: hidden;
