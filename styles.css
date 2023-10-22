@@ -98,9 +98,8 @@ h1 {
 .modal-content {
   background-color: #fff;
   border-radius: 4px;
-  padding: 20px;
-  width: 528px;
-  height: 581px;
+  width: 440px;
+  height: 600px;
   position:absolute;
   box-shadow: 0px 2px 1px 0px #00000033;
   box-shadow: 0px 1px 1px 0px #00000024;
@@ -110,7 +109,7 @@ h1 {
 .modal-content {
 display: flex;
 flex-direction: column;
-padding: 41px;
+padding: 40px;
 }
 .modal-style input {
   padding-left: 42px;
@@ -133,9 +132,11 @@ padding: 41px;
 }
 .modal-effect input:hover{
   border: 1px solid var(--button-color);
+  cursor: pointer;
 }
 .modal-effect textarea:hover {
   border: 1px solid var(--button-color);
+  cursor: pointer;
 }
 
 .modal-label {
@@ -148,7 +149,26 @@ padding: 41px;
   padding: 0;
   display: flex;
   flex-direction: column;
-  
+  justify-content: center;
+}
+.modal-form p {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--logo-color);
+  line-height: 23px;
+  letter-spacing: 0.03em;
+    text-align: center; 
+}
+.terms-text {
+  font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+}
+.terms-link:link, .terms-link:visited {
+  color: var(--button-color);
 }
 
 .modal-comments {
@@ -174,6 +194,14 @@ padding: 41px;
 .modal-checkbox input {
   position: absolute;
   left: 54px;
+  }
+    .modal-checkbox input:hover {
+      fill: var(--button-color);
+      cursor: pointer;
+    }
+  .modal-checkbox:hover{
+    fill: var(--button-color);
+    cursor: pointer;
   }
 
 .checkbox-icon {
@@ -201,21 +229,71 @@ padding: 41px;
   border-radius: 4px;
   border: none;
 }
+.submit-btn button:hover {
+  background-color: var(--button-effect);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+.newsletter {
+  margin-left: 93px;
+  margin-top: 25px;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--bg-color);
+}
+
 .newsletter svg {
  width: 24px;
  height: 24px;
+ position: relative;
+ right: 28px;
+ top: 13px;
+}
+.newsletter-box{
+  display: flex;
+ 
+}
+.newsletter-box input:hover {
+  border:1px solid var(--button-effect);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+  
+.newsletter-box input {
+width: 358px;
+height: 50px;
+padding-left: 4px;
+padding-top: 0;
+padding-bottom: 0;
+border-radius: 4px;
+margin-right: 12px;
+
 }
 .footer-sub-btn {
+  display: flex;
   width: 200px;
   height: 50px;
   background-color: var(--button-color);
+  border-radius: 4px; 
+}
+.footer-sub-btn:hover{ 
+background-color: var(--button-effect);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-sub-btn button:hover {
+  background-color: var(--button-effect);
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-sub-btn button{
  color: var(--bg-color);
-background-color: var(--button-color);
-border: none;
-width: 200px;
+  background-color: var(--button-color);
+  border: none;
+  width: inherit;
   height: 50px;
+  border-radius: 4px;
+  font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
 }
 .is-hidden {
   visibility: hidden;
