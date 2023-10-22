@@ -76,7 +76,12 @@ h1 {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-
+.icon-modal {
+  width: 18px;
+  height: 18px;
+  position:absolute;
+  padding:14px;
+}
 .modal {
   position: fixed;
   width: 100vw;
@@ -108,18 +113,11 @@ flex-direction: column;
 padding: 41px;
 }
 .modal-style input {
-  width: 448px;
-  height: 40px;  
-}
-.modal-label {
-  display:flex;
-  flex-direction: column;
-}
-.modal-form {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
+  padding-left: 42px;
+  width: inherit;
+  height: 40px;
+  border: 1px solid #0000001A;
+  border-radius: 4px;
 }
 .modal-style {
   width: inherit;
@@ -128,27 +126,123 @@ padding: 41px;
   flex-direction: column;
   position: relative;
 }
-    
+.modal-effect :hover{
+  fill: var(--button-color);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+.modal-effect input:hover{
+  border: 1px solid var(--button-color);
+}
+.modal-effect textarea:hover {
+  border: 1px solid var(--button-color);
+}
+
+.modal-label {
+  display:flex;
+  flex-direction: column;
+  padding-bottom: 4px;
+}
+.modal-form {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.modal-comments {
+  width: inherit;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.modal-comments textarea {
+  width: inherit;
+  height: 120px;
+  border: 1px solid #0000001A;
+  border-radius: 4px;
+  padding: 12px 16px ;
+  display: flex;
+}
+.modal-checkbox {
+  display:flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.modal-checkbox input {
+  position: absolute;
+  left: 54px;
+  }
+
+.checkbox-icon {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 54px;
+  margin-top: 2px;
+  margin-left: 3px;
+}
+.terms-text {
+  padding-left: 36px;
+}
+.submit-btn {
+  display: flex;
+  justify-content: center;
+}
+.submit-btn button {
+  width: 200px;
+  height: 50px;
+  background-color: var(--button-color);
+  color: var(--bg-color);
+  font-weight: 700;
+  font-size: 16px;
+  border-radius: 4px;
+  border: none;
+}
+.newsletter svg {
+ width: 24px;
+ height: 24px;
+}
+.footer-sub-btn {
+  width: 200px;
+  height: 50px;
+  background-color: var(--button-color);
+}
+.footer-sub-btn button{
+ color: var(--bg-color);
+background-color: var(--button-color);
+border: none;
+width: 200px;
+  height: 50px;
+}
 .is-hidden {
   visibility: hidden;
   opacity: 0%;
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .close-btn {
-  background-color: #fff;
-  font-family: roboto;
-  font-size: 18px;
-  font-weight: 700;
-  Width: 30px; 
+  Width: 30px;
   Height: 30px;
   border: 1px solid #0000001A;
   border-radius: 180%;
-  color: #000000;
   cursor: pointer;
   position: absolute;
-  top:8px;
-  right:8px;
+  top: 8px;
+  right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.close-btn svg{
+  Width: 18px; 
+  Height: 18px;
+ 
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.close-btn svg:hover{
+  fill: var(--button-color);
 }
 .card-hover {
   position: absolute;

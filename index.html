@@ -66,11 +66,11 @@
         </h1>
 
         <!--Request Servvice Button-->
-        <div  class="button">
+        <div class="button">
           <button data-modal-open class="req-serv-button" type="button">
             REQUEST OUR SERVICE
-          </button >
-         
+          </button>
+
         </div>
       </div>
     </section>
@@ -111,7 +111,7 @@
 
           <li>
             <div>
-              <svg >
+              <svg>
                 <use href="./images//icons.svg#icon-diagram1" />
               </svg>
             </div>
@@ -125,7 +125,7 @@
 
           <li>
             <div>
-              <svg >
+              <svg>
                 <use href="./images/icons.svg#icon-astronaut1" />
               </svg>
             </div>
@@ -169,12 +169,12 @@
 
         <ul class="team-position">
           <li class="shadow">
-            
+
             <img src="images/img4.jpg" width="270" alt="img not found" />
             <b class="team-studio">Cristopher Walker</b>
             <p class="team-studio-description">Product designer</p>
-            
-            
+
+
             <div class="team-icons effects">
               <ul class="social-icons-team">
                 <li>
@@ -198,10 +198,10 @@
                   </svg>
                 </li>
               </ul>
-            
-            </div>    
+
+            </div>
           </li>
-          
+
           <li class="shadow">
             <img src="images/img5.jpg" width="270" alt="img not found" />
 
@@ -231,12 +231,12 @@
                   </svg>
                 </li>
               </ul>
-            
+
             </div>
           </li>
 
           <li class="shadow">
-            <img src="images/img6.jpg" width="270"  alt="img not found" />
+            <img src="images/img6.jpg" width="270" alt="img not found" />
 
             <b class="team-studio">Ryan Harris</b>
 
@@ -264,7 +264,7 @@
                   </svg>
                 </li>
               </ul>
-            
+
             </div>
           </li>
 
@@ -296,7 +296,7 @@
                   </svg>
                 </li>
               </ul>
-            
+
             </div>
           </li>
         </ul>
@@ -392,50 +392,89 @@
           </li>
         </ul>
       </div>
+      <div class="newsletter">
+        <p>SUBSCRIBE TO THE NEWSLETTER</p>
+        <div>
+          <input type="email" name="newsletter">
+          <div class="footer-sub-btn">
+            <button type="submit">Subscribe</button>
+            <svg>
+              <use xlink:href="./images/icons.svg#icon-icon-send" />
+            </svg>
+          </div>
+        </div>
+      </div>
     </address>
   </footer>
   <!-- Modal content-->
-  
+
   <div class="modal is-hidden" data-modal>
     <div class="modal-content">
-      <button class="close-btn" data-modal-close>&times;</button>
+      <div class="close-btn" data-modal-close>
+        <svg>
+          <use xlink:href="./images/icons.svg#icon-close-black-18dp-2-1" />
+        </svg>
+      </div>
       <form class="modal-form" name="signup_form" autocomplete="off" novalidate>
         <h3>Leave your information and we'll call you back</h3>
-        <div class="modal-style">
-        <label class="modal-label">
-          Name
-          <input type="text" name="name" />
-        </label >
-        </div>
- 
-        <div class="modal-style">
-        <label class="modal-label">Phone</label>
-        <input type="number" name="lastName" />
-        
+
+        <div>
+          <label class="modal-label">Name</label>
+          <div class="modal-effect">
+            <div class="modal-style">
+              <input type="text" name="name" />
+              <svg class="icon-modal">
+                <use xlink:href="./images/icons.svg#icon-person-black-18dp-1" />
+              </svg>
+            </div>
+          </div>
         </div>
 
-        <div class="modal-style">
-        <label class="modal-label" >Email</label>
-          <input type="email" name="email" />
-        
+        <div>
+          <label class="modal-label">Phone</label>
+          <div class="modal-effect">
+            <div class="modal-style">
+              <input type="number" name="lastName" />
+              <svg class="icon-modal">
+                <use xlink:href="./images/icons.svg#icon-phone-black-18dp-1" />
+              </svg>
+            </div>
+          </div>
         </div>
-        <div class="modal-comments">
-          <label class="modal-label" >Comments</label>
-          <textarea placeholder="Enter the text"></textarea>
+        <div>
+          <label class="modal-label">Email</label>
+          <div class="modal-effect">
+            <div class="modal-style">
+              <input type="email" name="email" />
+              <svg class="icon-modal">
+                <use xlink:href="./images/icons.svg#icon-email-black-18dp-1" />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div>
+          <label class="modal-label">Comments</label>
+          <div class="modal-effect">
+            <div class="modal-comments">
+              <textarea placeholder="Enter the text"></textarea>
+            </div>
+          </div>
         </div>
         <div class="modal-checkbox">
-        
+          <svg class="checkbox-icon">
+            <use xlink:href="./images/icons.svg#icon-Vector" />
+          </svg>
           <input type="checkbox" name="hobby" value="reading" />
-          I agree with the letter and accept the<span>Terms and Conditions</span>
-        
+          <span class="terms-text">
+            I agree with the letter and accept the&nbsp;<span>Terms and Conditions</span></span>
         </div>
-        <button type="submit">Submit</button>
+        <div class="submit-btn">
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </div>
-    
-    
-  
-  <script src="./modal.js"></script>
+  </div>
+    <script src="./modal.js"></script>
 </body>
 
 </html>
