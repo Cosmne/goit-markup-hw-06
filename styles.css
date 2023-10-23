@@ -136,7 +136,7 @@ h1 {
   fill: rgba(33, 150, 243, 1);
 }
 
-.textfield:active {
+.textfield:focus {
   border: 1px solid var(--button-color);
 }
 
