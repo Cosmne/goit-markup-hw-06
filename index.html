@@ -395,10 +395,10 @@
       <div class="newsletter">
         <p>SUBSCRIBE TO THE NEWSLETTER</p>
         <div class="newsletter-box">
-          <input type="email" name="newsletter">
+          <input placeholder="E-mail" type="email" name="newsletter">
           <div class="footer-sub-btn">
             
-            <button type="submit">Subscribe</button>
+            <button  type="submit">Subscribe</button>
             <svg>
               <use xlink:href="./images/icons.svg#icon-icon-send" />
             </svg>
@@ -420,59 +420,56 @@
       <form class="modal-form" name="signup_form" autocomplete="off" novalidate>
         <p>Leave your information and we'll call you back</p>
 
-        <div>
+        <div class="modal-effect">
           <label class="modal-label">Name</label>
-          <div class="modal-effect">
+          
             <div class="modal-style">
-              <input type="text" name="name" />
+              <input class="textfield" type="text" name="name" />
               <svg class="icon-modal">
                 <use xlink:href="./images/icons.svg#icon-person-black-18dp-1" />
               </svg>
             </div>
-          </div>
+          
         </div>
 
-        <div>
+        <div class="modal-effect">
           <label class="modal-label">Phone</label>
-          <div class="modal-effect">
+          
             <div class="modal-style">
-              <input type="number" name="lastName" />
+              <input class="textfield" type="number" name="lastName" />
               <svg class="icon-modal">
                 <use xlink:href="./images/icons.svg#icon-phone-black-18dp-1" />
               </svg>
             </div>
-          </div>
+          
         </div>
-        <div>
+        <div class="modal-effect">
           <label class="modal-label">Email</label>
-          <div class="modal-effect">
             <div class="modal-style">
-              <input type="email" name="email" />
+              <input class="textfield" type="email" name="email" />
               <svg class="icon-modal">
                 <use xlink:href="./images/icons.svg#icon-email-black-18dp-1" />
               </svg>
             </div>
-          </div>
+ 
         </div>
         <div>
           <label class="modal-label">Comments</label>
-          <div class="modal-effect">
-            <div class="modal-comments">
+            <div class="modal-comments modal-effect">
               <textarea placeholder="Enter the text"></textarea>
             </div>
-          </div>
         </div>
         <div class="modal-checkbox">
           <svg class="checkbox-icon">
             <use xlink:href="./images/icons.svg#icon-Vector" />
           </svg>
-          <input type="checkbox" name="hobby" value="reading" />
+          <input class="cb" type="checkbox" name="checkbox" value="checked" />
           <span class="terms-text">
             I agree with the letter and accept the&nbsp;<a class="terms-link" href="#.com">Terms and Conditions</a></span>
         </div>
-        <div class="submit-btn">
-          <button type="submit">Submit</button>
-        </div>
+       
+          <button  class="submit-btn" type="submit">Submit</button>
+        
       </form>
     </div>
   </div>
